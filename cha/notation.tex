@@ -1,0 +1,59 @@
+\chapter*{Notation and Conventions}
+\addcontentsline{toc}{chapter}{Notation and Conventions}
+In this book we shall follow the sign conventions of Misner, Thorne, and Wheeler (1973). In particular, we use metric signature $-\ +\ +\ +$, we define the Riemann tensor by \eqref{3.2.3}, and we define the Ricci tensor by \eqref{3.2.25}. However, we shall make one important exception to these conventions. We choose to use the metric signature $-\ +\ +\ +$ because it is generally much more convenient than the alternative choice $+\ -\ -\ -$ in that it induces a positive definite (rather than negative definite) metric on spacelike hypersurfaces. Unfortunately, for the reasons explained in chapter 13, it is much more convenient to use the metric signature $+\ -\ -\ -$ for the treatment of spinors. Furthermore, the standard references on spinors all use this signature. \emph{Hence, in chapter 13-and only in chapter 13—we will change our metric signature convention to $+\ -\ -\ -$}. The confusion which might result from this should be minimized by the fact that the equations of chapter 13 are written in spinor notation, so the reader need only remember to change the sign of the metric when transcribing equations from spinor notation to tensor notation for use elsewhere in the book. With regard to these changes of sign, it is useful to note that the derivative operator, $\nabla_a$, associated with the metric is unaffected by a sign change of the metric. Hence, the Riemann tensor with index structure $R_{abc}^d$ also is unaffected, since it is defined purely in terms of $\nabla_a$. (However, it should be noted that some authors define the Riemann tensor with sign opposite that of \eqref{3.2.3}; see Misner, Thorne, and Wheeler (1973) for a table of sign conventions.) Similarly, it is conventional to take the stress-energy tensor $T_{ab}$ and Maxwell field tensor Fab to be unaffected by a change of metric signature. However, each raising or lowering of an index on $R_{abc}^d$, $T_{ab}$, $F_{ab}$, and any other tensor results in a change of sign.
+
+Throughout most of this book, we shall use ``geometrized units'', where the gravitational constant $G$ and the speed of light $c$ are set equal to $1$. However, for the convenience of the reader we have restored the $G$'s and $c$'s in section 5.4 and in many of the formulas elsewhere in the book where observational predictions are made. A conversion table from ``geometrized'' to ``nongeometrized'' units is given in appendix F.
+
+Our notation differs from standard conventions in one important respect. Most relativity texts use an index notation for components of tensors. Usually, greek indices are used to denote space or time components of a tensor, while latin indices are used to denote purely spatial components, although in some references (e.g., Landau and Lifshitz 1962) these conventions are reversed. This index notation provides an extremely efficient scheme for denoting tensor operations such as contraction, covariant differentiation, and the taking of outer products. However, this standard notational convention suffers from the serious drawback that it is impossible to distinguish a relation between tensors from a relation which holds only for tensor components with respect to a specially chosen basis. We shall overcome this difficulty by employing an abstract index notation discussed by Penrose (1968) and Penrose and Rindler (1984) and used extensively by Geroch. In our notation, latin indices on a tensor do not represent components but are part of the notation for the tensor itself, much like the arrow used to denote a vector in ordinary three-dimensional space. Thus, in this book any equation involving tensors which employs latin indices represents a relation between tensors; the taking of basis components need not even be contemplated. The complete rules for interpreting the notation are given in section 2.4. On the other hand, greek indices on a tensor represent components, as in the usual convention. Any equation employing greek indices is a relation between tensor components and, usually, holds only with respect to a specially chosen basis. Unfortunately, in our notation we cannot denote purely spatial tensor components without introducing yet another alphabet. However, only rarely in this book do equations arise which hold only for spatial components, and in such cases we simply shall state explicitly for which components a given equation applies.
+
+For the benefit of the reader who is not well versed in mathematical notation, we list below the definitions of some of the standard mathematical symbols used frequently in the text
+
+\begin{table}[!ht]
+    \centering
+\begin{tabularx}{\textwidth}{c X}
+    \toprule
+    $\cup$ & $A\cup B$ denotes the union of sets $A$ and $B$\\
+    $\cap$ & $A\cap B$ denotes the intersection of sets $A$ and $B$\\
+    $\subset$ & $A\subset B$ denotes that $A$ is a subset of $B$\\
+    $-$ & $B-A$ denotes the complement in $B$ of the set $A$\\
+    $\in$ & $p\in A$ denotes that $p$ is an element of $A$\\
+    $\{|\}$ & $\{p\in A|Q\}$ denotes that set consisting of those elements $p$ of the set $A$ which satisfy condition $Q$\\
+    $\times$ & Cartesian product; $A\times B$ is the set $\{(a,b)|a\in A \text{and} b\in B\}$\\
+    $\varnothing$ & the empty set\\
+    $\mathbb{R}$ & the set of real numbers\\
+    $\mathbb{R}^n$ & the set of $n$-tuples of real numbers\\
+    $\mathbb{C}$ & the set of complex numbers\\
+    $\mathbb{C}^n$ & the set of $n$-tuples of complex numbers\\
+    $:\ \to$ & $f:A\to B$ denotes that $f$ is a map from the set $A$ to the set $B$\\
+    $\circ$ & $f\circ g$ denotes the composition of maps $g:A\to B$ and $f:B\to C$, i.e., for $p\in A$ we have $(f\circ g)(p)=f[g(p)]$.\\
+    $[\ ]$ & f$[A]$ denotes the image of the set $A$ under the map $f$, i.e., the set $\{f(x)|x\in A\}$.\\
+    $C^n$ & the set of $n$-times continuously differentiable functions\\
+    $C^\infty$ & the set of infinitely continuously differentiable (i.e., smooth functions)\\
+    \bottomrule
+\end{tabularx}
+\end{table}
+
+In addition, a number of symbols defined in the book appear frequently and are not always redefined each time they are used. Hence, for the convenience of the reader we list these symbols below, together with the section of the book where they are defined
+
+\begin{table}[!ht]
+    \centering
+\begin{tabularx}{\textwidth}{c X}
+    \toprule
+    $\overline{S}$ & the closure of the set $S$ (appendix A)\\
+    $\text{int}(S)$ & interior of the set $S$ (appendix A)\\
+    $\dot{S}$ & boundary of the set $S$ (appendix A)\\
+    $\mathscr{L}_v$ & Lie derivative with respect to the vector field $v^a$ (appendix C)\\
+    $\mathscr{F}$ & the set of smooth functions from a manifold $M$ into $\mathbb{R}$ (section 2.2)\\
+    $V_p$ & tangent space at point $p$ of a manifold\\
+    $V_p^*$ & dual space to $V_p$ (section 2.3)\\
+    $I^+(S)$ & chronological future of the set $S$ (section 8.1)\\
+    $J^+(S)$ & causal future of the set $S$ (section 8.1)\\
+    $D^+(S)$ & future domain of dependence of the closed, achronal set $S$ (section 8.3)\\
+    $H^+(S)$ & future Cauchy horizon of the closed, achronal set $S$ (section 8.3)\\
+    $\mathscr{J}^+$ & future null infinity (section 11.1)\\
+    $i^0$ & spatial infinity (section 11.1)\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+The symbols $I^-(S),\ J^-(S),\ D^-(S),\ H^-(S)$, and $\mathscr{J}^-$ are defined as above with ``past'' replacing ``future''. $D(S)$ denotes $D^+(S)\cup D^-(S)$, and $H(S)$ denotes $H^+(S)\cup H^-(S)$. Finally, round and square brackets around tensor indices denote, respectively, symmetrization and antisymmertrization, as defined by \eqref{2.4.3} and \eqref{2.4.4}.

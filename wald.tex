@@ -1,0 +1,27 @@
+% !TEX program = xelatex
+\PassOptionsToPackage{quiet}{xeCJK}
+\PassOptionsToPackage{no-math}{fontspec}
+\documentclass[11pt,oneside]{book}
+\input{book.cfg}
+\usepackage[toc]{multitoc}
+
+\title{\textsc{General Relativity}}
+\author{Robert M. Wald}
+\date{The University of Chicago Press}
+
+\begin{document}
+\maketitle
+
+\frontmatter\tableofcontents
+\input{cha/copyright}
+
+\input{cha/preface.tex}
+\input{cha/notation.tex}
+\mainmatter
+\input{cha/cha1.tex}
+\input{cha/cha2.tex}
+\input{cha/cha3.tex}
+\input{cha/cha4.tex}
+\input{cha/cha5.tex}
+\input{cha/cha6.tex}
+\end{document}
