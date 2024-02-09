@@ -2,7 +2,7 @@
 In this chapter we lay the foundations for a precise, mathematical formulation of general relativity by obtaining some basic properties of manifols and tensor fiels. As defined in section 2.1, an $n$-dimensional manifold is a set that has the local differential structure of $\mathbb{R}^n$ but not necessarily its global properties. In section 2.2 we define tangent vectors as directional derivative operators acting on functions defined on a manifold. We obtain there some important properties of coordinate bases of the tangent space and tangents to curves. Tensors are introduced in section 2.3, and the notion of a metric is defined. Finally, in section 2.4 we introduce the abstract index notation for tensors, which we shall use throughout the remainder of this book. We will use a fair number of standard mathematical symbols in this chapter, and the reader unfamiliar with these symbols should consult the section ``Notation and Conventions'' at the beginning of this book.
 
 \section{Manifols}
-As mentioned in the previous chapter, our experience tells us that spacetime is a ``four-dimensional continuum'' in the sense that it requires four numbers to characterize an event. In prerelativity physics as well as in special relativity it is assumed that this is globally true, i.e., that all events in spacetime can be put into one-to-one continuous correspondence with the points of $\mathbb{R}^4$. However, in general relativity we will be solving for the spacetime geometry and we do not wish to prejudice in advance any aspects of the global nature of spacetime structure. Our situation is very similar to that of hypothetical investigators of the structure of the surface of Earth prior to the explorations of Columbus and Magellan. Such investigators might notice that in their vicinity they can characterize positions on the surface of the Earth by two numbers. However, they would be making a serious error is they were to extrapolate from this fact to the conclusion that the entire collection of points on the surface of the Earth can be put into one-to-one correspondence with points of R' in a continuous manner. Thus, what is needed as a mathematical basis for beginning the investigation of spacetime structure (as well as the surface of the Earth) is a precise notion of a manifold, that is, a set in which the vicinity of every point ``looks like'' $\mathbb{R}^n$ but which may have quite different global properties.
+As mentioned in the previous chapter, our experience tells us that spacetime is a ``four-dimensional continuum'' in the sense that it requires four numbers to characterize an event. In prerelativity physics as well as in special relativity it is assumed that this is globally true, i.e., that all events in spacetime can be put into one-to-one continuous correspondence with the points of $\mathbb{R}^4$. However, in general relativity we will be solving for the spacetime geometry and we do not wish to prejudice in advance any aspects of the global nature of spacetime structure. Our situation is very similar to that of hypothetical investigators of the structure of the surface of Earth prior to the explorations of Columbus and Magellan. Such investigators might notice that in their vicinity they can characterize positions on the surface of the Earth by two numbers. However, they would be making a serious error is they were to extrapolate from this fact to the conclusion that the entire collection of points on the surface of the Earth can be put into one-to-one correspondence with points of $\mathbb{R}^2$ in a continuous manner. Thus, what is needed as a mathematical basis for beginning the investigation of spacetime structure (as well as the surface of the Earth) is a precise notion of a manifold, that is, a set in which the vicinity of every point ``looks like'' $\mathbb{R}^n$ but which may have quite different global properties.
 
 In the case of the Earth, our investigators might be aware that its surface ``lives'' in the higher dimensional Euclidean space $\mathbb{R}^3$ of all space points (at least, according to prerelativity notions of space and time). Thus the study of two-dimensional surfaces embedded in  $\mathbb{R}^3$ would provide an adequate mathematical framework to analyze the structure of the Earth's surface, and one could avoid making an abstract definition of manifols. However, in general relativity, spacetime itself does not (as far as we know) naturally live in a higher dimensional Euclidean space, so an abstract definition is much more natural. Indeed, such a definition turns out to be extremely useful even for the study of ordinary surfaces in $\mathbb{R}^3$.
 
@@ -12,11 +12,11 @@ Before defining the notion of a manifold we remind the reader that an \emph{open
 
 An \emph{open set} in $\mathbb{R}^n$ is any set which can be expressed as a union of open balls. This notion of open set makes $\mathbb{R}^n$ a topological space in the sense discussed in appendix A.
 
-Basically, a manifold is a set made up of pieces that ``look like'' open subsets of $\mathbb{R}^n$ such that these pieces can be ``sewn together'' smoothly. More precisely, an $n$-dimensional, $C^\infty$, \emph{real manifold $M$} is a set together with a collection of subsets $\{O_\alpha\}$ satisfying the following properties
+Basically, a \emph{manifold} is a set made up of pieces that ``look like'' open subsets of $\mathbb{R}^n$ such that these pieces can be ``sewn together'' smoothly. More precisely, an \emph{$n$-dimensional}, $C^\infty$, \emph{real manifold $M$} is a set together with a collection of subsets $\{O_\alpha\}$ satisfying the following properties
 \begin{enumerate}[label=(\arabic*)]
-    \item Each $p\in M$ lies in at least one $O_\alpha$, i.e., the $\{0_\alpha\}$ cover $M$.
+    \item Each $p\in M$ lies in at least one $O_\alpha$, i.e., the $\{O_\alpha\}$ cover $M$.
     \item For each $\alpha$, there is a one-to-one, onto, map $\psi_\alpha:\ O_\alpha\to U_\alpha$, where $U_\alpha$ is an open subset of $\mathbb{R}^n$.
-    \item If any two sets $O_\alpha$ and $O_\beta$ overlap, $O_\alpha\cap O_\beta\neq\varnothing$ (where $\varnothing$ denotes the empty set), we can consider the map $\psi_\beta\circ\psi_\alpha^{-1}$ (where $\circ$ denotes composition) which takes points in $\psi_\alpha[O_\alpha\cap O_\beta]\subset U_\alpha\subset\mathbb{R}^n$ to points in $\psi_\beta[O_\alpha\cap O_\beta]\subset U_\beta\subset\mathbb{R}^n$ (see \figref{2.1}). We require these subsets of R'' to be open and this map to be $C^\infty$, i.e., infinitely continuously differentiable. (Since we are dealing here with maps of $\mathbb{R}^n$ into $\mathbb{R}^n$, the advanced calculus notion of $C^\infty$ functions applies.)
+    \item If any two sets $O_\alpha$ and $O_\beta$ overlap, $O_\alpha\cap O_\beta\neq\varnothing$ (where $\varnothing$ denotes the empty set), we can consider the map $\psi_\beta\circ\psi_\alpha^{-1}$ (where $\circ$ denotes composition) which takes points in $\psi_\alpha[O_\alpha\cap O_\beta]\subset U_\alpha\subset\mathbb{R}^n$ to points in $\psi_\beta[O_\alpha\cap O_\beta]\subset U_\beta\subset\mathbb{R}^n$ (see \figref{2.1}). We require these subsets of $\mathbb{R}^n$ to be open and this map to be $C^\infty$, i.e., infinitely continuously differentiable. (Since we are dealing here with maps of $\mathbb{R}^n$ into $\mathbb{R}^n$, the advanced calculus notion of $C^\infty$ functions applies.)
 \end{enumerate}
 
 Each map $\psi_\alpha$ is generally called a \emph{chart} by mathematicians and a \emph{coordinate system} by physicists. We shall use these terms interchangeably. In order to prevent one from defining new manifolds by merely deleting or adding in a coordinate system, it is convenient also to require in the definition of $M$ that the cover $\{O_\alpha\}$ and chart family $\{\psi_\alpha\}$ is maximal, i.e., all coordinate systems compatible with (2) and (3) are included. The definition of $C^k$ or analytic manifolds is the same as above with the appropriate change in requirement (3). To define a complex manifold, one merely replaces $\mathbb{R}^n$ by $\mathbb{C}^n$ above.
@@ -40,7 +40,7 @@ Each map $\psi_\alpha$ is generally called a \emph{chart} by mathematicians and 
  
 We can define a topology on the manifold $M$ by demanding that all the maps $\psi_\alpha$ in our maximal collection be homeomorphisms (see appendix A for definitions). Indeed, it is perhaps more natural to proceed by defining a manifold to be a topological space satisfying the above properties, with each $\psi_\alpha$ a homeomorphism. (We have not done so simply in order to avoid introducing the machinery of topological spaces in the main text.) Viewed as topological spaces, we shall consider in this book only manifolds which are \emph{Hausdorff} and \emph{paracompact}; these terms are explained in appendix A.
 
-Euclidean space $\mathbb{R}^n$ provides a trivial example of a manifold, which can be covered by a single chart ($O=\mathbb{R}^n,\psi=\text{identity map}$). A more interesting example of a manifold is the $2$-sphere $S^2$
+Euclidean space $\mathbb{R}^n$ provides a trivial example of a manifold, which can be covered by a single chart ($O=\mathbb{R}^n$, $\psi=\text{identity map}$). A more interesting example of a manifold is the $2$-sphere $S^2$
  \[S^2=\ab\{\ab(x^1,x^2,x^3)\in\mathbb{R}|\ab(x^2)^2+\ab(x^2)^2+\ab(x^3)^2=1\}\]
 
 The entire $2-$sphere $S^2$ cannot be mapped into $\mathbb{R}^2$ in a continuous, $1-1$ manner, but ``pieces'' of $S^2$ can, and these can be ``smoothly sewn together''. For example, if we define the six hemispherical open sets $O_i^\pm$ for $i=1,2,3$ by
@@ -63,7 +63,7 @@ For manifolds like the sphere, which arise naturally as surfaces embedded in $\m
 \centering
 \begin{tikzpicture}
     \draw (0,0) circle (1.2);
-    \draw [->] ({-1.2/sqrt(2)},{1.2/sqrt(2)}) --++ ({1.2/sqrt(2)},{1.2/sqrt(2)}) node [at start,below right] {$\mathsf{p}$};
+    \draw [->] ({-1.2/sqrt(2)},{1.2/sqrt(2)}) --++ ({1.2/sqrt(2)},{1.2/sqrt(2)}) node [at start,below right] {$p$};
     \shade [ball color=teal] ({-1.2/sqrt(2)},{1.2/sqrt(2)}) circle (.06);
     \draw [xshift=(-1.2/sqrt(2)-1.2)*1cm,yshift=(-1.2/sqrt(2)+0.9-0.45*cos(22.5)+0.45*sin(22.5)/sin(45))*1cm] (0,0) -- ({1.8*sqrt(2)},{1.8*sqrt(2)}) --++ ({-.9*sin(22.5)},{-.9*cos(22.5)}) --++ ({-1.8*sqrt(2)},{-1.8*sqrt(2)}) -- cycle;
 \end{tikzpicture}
@@ -92,7 +92,7 @@ Though it may not be obvious at first glance, this definition does indeed make p
     \draw [<->,semithick] (1.75,-.25) -- (1.75,-.75) node [at start,left,xshift=.25em] {$\scriptstyle x^2$} -- (2.25,-.75) node [below,yshift=.25em] {$\scriptstyle x^1$};
     \draw [->,semithick] (-.75,.25) -- (2.5,.25) node [above] {$\scriptstyle U$} node [midway,above] {$\scriptstyle\psi$};
     \shade [ball color=teal] (-1,.25) circle (.06) node [left] {$\scriptstyle p$};
-    \shade [ball color=teal] (2.5,.125) circle (.06) node [right] {$\scriptstyle \psi(p)$};
+    \shade [ball color=teal] (2.5,.125) circle (.06) node [right] {$\scriptstyle\psi(p)$};
     \draw [->,semithick] (-1,-.25) -- (-1,-4) node [at start,left] {$\scriptstyle O$} node [midway,right] {$\scriptstyle f$};
     \draw [semithick] (-4,-4) -- (0,-4) node [above left] {$\scriptstyle\mathsf{R}$};
 \end{tikzpicture}
@@ -166,7 +166,7 @@ where $x'^\nu$ denotes the $\nu$th component of the map $\psi'\circ\psi^{-1}$. H
     \label{2.2.10}
 \end{equation}
 
-\eqref{2.2.10} is known as the \emph{vector transformation law}.
+\Eqref{2.2.10} is known as the \emph{vector transformation law}.
 
 A \emph{smooth curve}, $C$, on a manifold $M$ is simply a $C^\infty$ map of $\mathbb{R}$ (or an interval of $\mathbb{R}$) into $M$, $C:R \to M$. At each point $p\in M$ lying on the curve $C$ we can associate with $C$ a tangent vector $T\in V_p$, as follows. For $f\in\mathscr{F}$ we set $T(f)$ equal to the derivative of the function $f\circ C:\mathbb{R}\to\mathbb{R}$ evaluated at $p$, i.e., $T(f)=\d(f\circ C)/\d t$. Note that the above coordinate basis vector $X_\mu$, associated with a chart $\psi$ is the tangent to the curves on $M$ obtained by keeping all coordinate values except $x^\mu$ constant. Notice also that when we choose a coordinate system $\psi$, the curve $C$ on $M$ will get mapped into a curve $x^\mu(t)$ in $\mathbb{R}^n$. Then, for any $f\in\mathscr{F}$, we have
 \begin{equation}
@@ -217,7 +217,7 @@ We give now the precise mathematical definition of tensors and discuss their pro
 
 Where ${\delta^\mu}_\nu=1$ if $\mu=\nu$ and $0$ otherwise. (This defines the action of $v^{\mu^*}$ on the basis elements; its action on an arbitrary vector $v\in V$ is determined by this and linearity). It follows directly (problem 6) that $\{v^{\mu^*}\}$ is a basis of $V^*$, called the \emph{dual basis} to the basis ${v_\mu}$ of $V$. In particular, this shows that $\dim V^* = \dim V$. The correspondence $v_\mu\leftrightarrow v^{\mu^*}$ gives rise to an isomorphism between $V$ and $V^*$, but this isomorphism depends on the choice of basis $\{v_\mu\}$, so there is no natural way of identifying $V^*$ with $V$ (unless more structure is given on $V$, such as a preferred basis or, as described below, a metric).
 
-We now can apply the above construction starting with the vector space $V^*$ thereby obtaining the \emph{double dual} vector space to $V$, denoted $V^*$. A vector $v^{**}$ in $V^{**}$ is a linear map from $V^*$ into $\mathbb{R}$. However, $V^{**}$ is naturally isomorphic to the original vector space $V$. To each vector $v$ in $V$ we can associate the map in $V^{**}$ whose value on the vector $\omega^*\in V^*$ is just $\omega^*(v)$. In this way, we obtain a one-to-one linear map of $V$ into $V^{**}$ which must be onto since $\dim V = \dim V^{**}$. Thus, taking the double dual gives nothing new; we can naturally identify $V^{**}$ with the original vector space $V$. This identification will be assumed in the discussion below.
+We now can apply the above construction starting with the vector space $V^*$ thereby obtaining the \emph{double dual} vector space to $V$, denoted $V^{**}$. A vector $v^{**}$ in $V^{**}$ is a linear map from $V^*$ into $\mathbb{R}$. However, $V^{**}$ is naturally isomorphic to the original vector space $V$. To each vector $v$ in $V$ we can associate the map in $V^{**}$ whose value on the vector $\omega^*\in V^*$ is just $\omega^*(v)$. In this way, we obtain a one-to-one linear map of $V$ into $V^{**}$ which must be onto since $\dim V = \dim V^{**}$. Thus, taking the double dual gives nothing new; we can naturally identify $V^{**}$ with the original vector space $V$. This identification will be assumed in the discussion below.
 
 We now are ready to define the notion of a tensor. Let $V$ be a finite dimensional vector space and let $V^*$ denote its dual vector space. A \emph{tensor, $T$, of type $(k,l)$} over $V$ is a multilinear map
 
@@ -247,7 +247,7 @@ Thus, one way of constructing tensors is to take outer products of vectors and d
     \label{2.3.3}
 \end{equation}
 
-The basis expansion coefficients, ${T^{\mu_1\cdots\mu_k}}_{\nu_1\cdots\nu_l}$, are called the components of the tensor T with respect to the basis $\{v_\mu\}$. Note that we follow the standard convention in the notation for components of using superscripts for labels $\mu_i$ associated with vectors and subscripts for labels $\nu_j$ associated with dual vectors.
+The basis expansion coefficients, ${T^{\mu_1\cdots\mu_k}}_{\nu_1\cdots\nu_l}$, are called the \emph{components} of the tensor T with respect to the basis $\{v_\mu\}$. Note that we follow the standard convention in the notation for components of using superscripts for labels $\mu_i$ associated with vectors and subscripts for labels $\nu_j$ associated with dual vectors.
 
 In terms of components, we have the following formulas for contraction and outer product. Suppose the tensor $T$ has components ${T^{\mu_1\cdots\mu_k}}_{\nu_1\cdots\nu_l}$ as in \eqref{2.3.3}. Then, the contraction, $CT$, of $T$ has components given by
 \begin{equation}
@@ -261,7 +261,7 @@ If $T'$ has components ${T'^{\mu_1'\cdots\mu_{k'}'}}_{\nu_1'\cdots\nu_{l'}'}$, t
     \label{2.3.5}
 \end{equation}
 
-The above discussion applies to an arbitrary finite-dimensional vector space $V$. Let us now consider the case of prime interest for us, where $V$ is the tangent space, $V_p$, at point $p$ of a manifold $M$. In this case, $V_p^*$, is commonly called the \emph{cotangent space} at $p$ and vectors in $V_p^*$ are called \emph{cotangent vectors}. We also commonly refer to vectors in $V_p$ as \emph{contravariant vectors} and vectors in $V_p^*$ as \emph{covariant vectors}. As discussed in section 2.2, given a coordinate system, we can construct a coordinate basis $\partial/\partial x^1,\ldots,\partial/\partial x^n$ of $V_p$. The associated dual basis of $V_p^*$ is usually denoted as $\d x^1,\ldots,\d x^n$. [Thus, we stress that $\d x^\mu$ is merely the symbol for the linear map defined by $\d x^\mu(\partial.\partial x^\nu)={\delta^\mu}_\nu$.] If we change coordinate systems, we already showed that the components $v'^{\mu'}$ of a vector $v$ in the new basis are related to its components $v^\mu$ in the old basis by the vector transformation law
+The above discussion applies to an arbitrary finite-dimensional vector space $V$. Let us now consider the case of prime interest for us, where $V$ is the tangent space, $V_p$, at point $p$ of a manifold $M$. In this case, $V_p^*$, is commonly called the \emph{cotangent space} at $p$ and vectors in $V_p^*$ are called \emph{cotangent vectors}. We also commonly refer to vectors in $V_p$ as \emph{contravariant} vectors and vectors in $V_p^*$ as \emph{covariant} vectors. As discussed in section 2.2, given a coordinate system, we can construct a coordinate basis $\partial/\partial x^1,\ldots,\partial/\partial x^n$ of $V_p$. The associated dual basis of $V_p^*$ is usually denoted as $\d x^1,\ldots,\d x^n$. [Thus, we stress that $\d x^\mu$ is merely the symbol for the linear map defined by $\d x^\mu(\partial.\partial x^\nu)={\delta^\mu}_\nu$.] If we change coordinate systems, we already showed that the components $v'^{\mu'}$ of a vector $v$ in the new basis are related to its components $v^\mu$ in the old basis by the vector transformation law
 \begin{equation}
     v'^{\mu'}=\sum_{\mu=1}^nv^\mu\pdv{x'^{\mu'}}{x^\mu}
     \label{2.3.6}
@@ -279,7 +279,7 @@ In general, the components of a tensor $T$ of type $(k, l)$ transform as
     \label{2.3.8}
 \end{equation}
 
-\eqref{2.3.8} is known as the \emph{tensor transformation law}.
+\Eqref{2.3.8} is known as the \emph{tensor transformation law}.
 
 In other treatments, \eqref{2.3.8} often is used as the defining property of a tensor. The definition we have given here has the advantage that it generally is much easier to define a quantity as a tensor by displaying it as a multilinear map on vectors and dual vectors than it is to display it as a collection of numbers associated with a coordinate system which changes according to equation\eqref{2.3.8} when we change coordinate systems. In fact, as we shall illustrate throughout this book, it is rarely worthwhile to introduce a basis and take components of a tensor at all, let alone to worry about how these components change under a change of basis.
 
@@ -293,7 +293,7 @@ In a coordinate basis, we may expand a metric $g$ in terms of its components $g_
     \label{2.3.9}
 \end{equation}
 
-Sometimes the notation $\d s^2$ is used in place of $g$ to represent the metric tensor, in which case we write $\eqref{2.3.9}$ as
+Sometimes the notation $\d s^2$ is used in place of $g$ to represent the metric tensor, in which case we write \eqref{2.3.9} as
 \begin{equation}
     \d s^2=\sum_{\mu,\nu}g_{\mu\nu}\d x^\mu\d x^\nu
     \label{2.3.10}
@@ -301,7 +301,7 @@ Sometimes the notation $\d s^2$ is used in place of $g$ to represent the metric 
 
 where, following standard practice, we have omitted writing the outer product sign between $\d x^\mu$ and $\d x^\nu$. The notation of \eqref{2.3.10} conveys the intuitive flavor of a metric as representing ``infinitesimal squared distance''.
 
-Given a metric g, we always can find an \emph{orthonormal basis} $v_1,\ldots,v_n$ of the tangent space at each point p, i.e., a basis such that $g(v_\mu,v_\nu)=0$ if $\mu\neq\nu$ and $g(v_\mu,v_\mu)=\pm 1$ (see problem 7). There are, of course, many other orthonormal bases at p, but the number of basis vectors with $g(v_\mu,v_\mu)=+1$ and the number with g $g(v_\mu,v_\mu)=-1$ are independent of choice of orthonormal basis (problem 7). The number of $+$ and $-$ signs occurring is called the signature of the metric. In ordinary differential geometry, one usually deals with positive definite metrics, i.e., metrics with signature $+\ +\ \ldots\ +$. On the other hand, the metric of spacetime has a signature $-\ +\ +\ +$. Positive definite metrics are called Riemannian; metrics with signatures like those on spacetime (one minus and the remainder plus) are called Lorentzian.
+Given a metric g, we always can find an \emph{orthonormal basis} $v_1,\ldots,v_n$ of the tangent space at each point p, i.e., a basis such that $g(v_\mu,v_\nu)=0$ if $\mu\neq\nu$ and $g(v_\mu,v_\mu)=\pm 1$ (see problem 7). There are, of course, many other orthonormal bases at p, but the number of basis vectors with $g(v_\mu,v_\mu)=+1$ and the number with g $g(v_\mu,v_\mu)=-1$ are independent of choice of orthonormal basis (problem 7). The number of $+$ and $-$ signs occurring is called the \emph{signature} of the metric. In ordinary differential geometry, one usually deals with \emph{positive definite} metrics, i.e., metrics with signature $+\ +\ \ldots\ +$. On the other hand, the metric of spacetime has a signature $-\ +\ +\ +$. Positive definite metrics are called \emph{Riemannian}; metrics with signatures like those on spacetime (one minus and the remainder plus) are called \emph{Lorentzian}.
 
 As defined above, at each point $p\in M$ a metric $g$ is a tensor of type $(0,2)$ over $V_p$, i.e., a multilinear map from $V_p\times V_p\to\mathbb{R}$. However, we can also view $g$ as a linear map from $V_p$ into $V_p^*$ via $v\to g(\cdot,v)$. Because of the nondegeneracy of $g$, this map is one-to-one and onto. In particular the inverse map exists. Thus, we can use $g$ to establish a one-to-one correspondence between vectors and dual vectors. Indeed, given a metric g we could use this correspondence to entirely circumvent the necessity of introducing dual vectors. Normally this is done and accounts for why the concept of a dual vector is not more familiar to most physicists. However, in general relativity we shall be solving for the metric of spacetime; since the metric is not known from the start, it is essential that we keep the distinction between vectors and dual vectors completely clear.
 
@@ -401,7 +401,7 @@ is called a \emph{differential l-form}. Some properties of differential forms ar
         Use the Jacobi identity to derive an equation satisfied by ${C^\gamma}_{\alpha\beta}$. (This equation is a useful algebraic relation if the ${C^\gamma}_{\alpha\beta}$ are constants, as will be the case if $Y_1,\ldots,Y_n$ are left [or right] invariant vector fields on a Lie group [see section 7.2].)
     \end{enumerate}
 \end{problem}
-\begin{proof}
+\begin{proof}\leavevmode\let\qed\relax
 \begin{enumerate}[label=(\alph*)]
     \item First we check linearity. Let $u$ and $v$ be vector fields, $f$ and $g$ be functions and a and b be real numbers
     \[\begin{aligned}\relax
@@ -455,7 +455,7 @@ is called a \emph{differential l-form}. Some properties of differential forms ar
         (Hint: Contract both sides with $(Y_\sigma)^\mu(Y_\rho)^\nu$)
     \end{enumerate}
 \end{problem}
-\begin{proof}\leavevmode
+\begin{proof}\leavevmode\let\qed\relax
 \begin{enumerate}[label=(\alph*)]
     \item Here, $\partial_\nu$ shorthands for $\partial/\partial x^\nu$.
 
@@ -485,7 +485,7 @@ is called a \emph{differential l-form}. Some properties of differential forms ar
     We use this relation (in the second equation below) to show that $T_{ab}(Y_\sigma)^a(Y_\rho)^b$ also equals ${C^\gamma}_{\sigma\rho}$
 
     \[\begin{aligned}
-        T_{ab}(Y_\sigma)^{a}(Y_\rho)^b&=(Y_\rho)^\nu(Y_\sigma)^\mu\partial_\nu(Y^{\gamma^*})_\mu-(Y_\sigma)^\mu(Y_\rho)^\nu\partial_\mu(Y^{\gamma^*})_\nu  \\
+        T_{ab}(Y_\sigma)^a(Y_\rho)^b&=(Y_\rho)^\nu(Y_\sigma)^\mu\partial_\nu(Y^{\gamma^*})_\mu-(Y_\sigma)^\mu(Y_\rho)^\nu\partial_\mu(Y^{\gamma^*})_\nu  \\
         &=-(Y_\rho)^\nu(Y^{\gamma^*})_\mu\partial_\nu(Y_\sigma)^\mu+(Y_\sigma)^\mu(Y^{\gamma^*})_\nu\partial_\mu(Y_\rho)^\nu \\
         &=(Y^{\gamma^*})_\nu\{(Y_\sigma)^\mu\partial_\mu(Y_\rho)^\nu-(Y_\rho)^\mu\partial_\mu(Y_\sigma)^\nu\} \\
         &=(Y^{\gamma^*})_\nu[Y_\sigma,Y_\rho]^\nu={C^\gamma}_{\sigma\rho}
@@ -523,7 +523,7 @@ is called a \emph{differential l-form}. Some properties of differential forms ar
     Finally, we show that $F\circ\psi$ is the desired coordinate system.
    \[\begin{aligned}
         Y_\alpha&=\sum_\mu(Y_\alpha)^\mu\pdv{}{x^\mu}=\sum_{\mu,\nu}(Y_\alpha)^\mu\pdv{y^\nu}{x^\mu}\pdv{}{y^\nu}\\
-        &=\sum_{\mu,\nu}(Y_\alpha)^\mu(Y^{\nu^*})_\mu\pdv{}{y^\nu}=\sum_{\nu}\delta^\nu{}_\alpha\pdv{}{y^\nu}=\pdv{}{y^\alpha}
+        &=\sum_{\mu,\nu}(Y_\alpha)^\mu(Y^{\nu^*})_\mu\pdv{}{y^\nu}=\sum_\nu\delta^\nu{}_\alpha\pdv{}{y^\nu}=\pdv{}{y^\alpha}
     \end{aligned}\]
 
     which completes the proof.
@@ -537,11 +537,11 @@ is called a \emph{differential l-form}. Some properties of differential forms ar
     \item Prove that the operation of contraction, \eqref{2.3.2}, is independent of the choice of basis.
 \end{enumerate}
 \end{problem}
-\begin{proof}\leavevmode
+\begin{proof}\leavevmode\let\qed\relax
 \begin{enumerate}[label=(\alph*)]
     \item The set $\{v^{\mu^*}\}$ is linearly independent: Suppose $T=\alpha_1v^{1^*}+\cdots+\alpha_nv^{n^*}=0.$ It follows that $T(v_i) = \alpha_i= 0$ for all $i.$
 
-    Also, the vectors $\{v^{\mu^*}\}$ span $V^*:$ Let $S$ be any linear functional in $V^*.$ Then $S$ and $\sum_{\alpha}S(v_{\alpha})v^{\alpha^*}$ agree on the basis $\{ v_1, \ldots , v_n\} $ of $V$. It follows that they are the same linear functional.
+    Also, the vectors $\{v^{\mu^*}\}$ span $V^*:$ Let $S$ be any linear functional in $V^*.$ Then $S$ and $\sum_\alpha S(v_\alpha)v^{\alpha^*}$ agree on the basis $\{ v_1, \ldots , v_n\} $ of $V$. It follows that they are the same linear functional.
 
     Please note that ``linear functional'',``dual vector'' and ``element of $V^*$'' are different names for the same object.
     \item Write $w=c_1v_1+\cdots+c_nv_n.$ Applying $v^{\alpha^*}$ to both sides of this equation yields $v^{\alpha^*}(w)=c_\alpha.$ This proves the first equation. The second follows from the fact that both sides agree on a basis of $V$.
@@ -564,6 +564,8 @@ is called a \emph{differential l-form}. Some properties of differential forms ar
     \end{enumerate}
 \end{problem}
 \begin{solution}
+    The solutions to items (a) and (b) are given in Proposition (2.9) and Theorem (2.11), respectively, though in a slightly more general form. These two theorems build on Propositions (2.2) and (2.4), and also on the concept of the direct sum of vector subspaces.
+
     Considering symmetric bilinear forms in general in (2.9) and (2.11). dropping the requirement of nondegeneracy. To apply these results to the case of a metric, we show that there can be no self-orthogonal (null) vector in an orthonormal basis of a space $V$ with metric $g$. Let $v_1,\ldots,v_n$ be an orthonormal basis. If $v_i$ were self-orthogonal, then the linear functional $g(v_i,\cdot)$ would vanish on a basis of $V$, contradicting the nondegeneracy of $g$.
 \end{solution}
 
@@ -604,11 +606,11 @@ is called a \emph{differential l-form}. Some properties of differential forms ar
         where $\tan\phi=y/x$.
     \end{enumerate}
 \end{problem}
-\begin{proof}\leavevmode
+\begin{proof}\leavevmode\let\qed\relax
     \begin{enumerate}[label=(\alph*)]
         \item Let $( x^1, \ldots , x^n) $ and $( \tilde{x} ^1, \ldots , \tilde{x}^n) $ be coordinates on some manifold $M$. According to the tensor transformation law (2.3.7), one has
         \[
-        \d x^{\mu}=\pdv{x^{\mu}}{\tilde{x}^1}\d\tilde{x}^1+\cdots+\pdv{x^\mu}{\tilde{x}^n}\d\tilde{x}^n
+        \d x^\mu=\pdv{x^\mu}{\tilde{x}^1}\d\tilde{x}^1+\cdots+\pdv{x^\mu}{\tilde{x}^n}\d\tilde{x}^n
         \]
          
         as should be.
@@ -632,7 +634,7 @@ is called a \emph{differential l-form}. Some properties of differential forms ar
         \]
         We now expand $\d x^2+\d y^2+\d z^2$ using these expressions and find
         \[
-        \d r^{2}+r^{2}\d\theta^{2}+r^{2}\sin^{2}\theta\d\phi^{2}
+        \d r^2+r^2\d\theta^2+r^2\sin^2\theta\d\phi^2
         \]
         \item This item can be solved by proceeding as in the solution of item (a). To compute the relevant derivatives, we use the equation
         \item 

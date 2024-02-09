@@ -1,25 +1,31 @@
 \section*{\LARGE Copyright Notice / 版权声明 / 版權宣告}
-\subsection*{English (US)}
+
 \textbf{\textsf{General Relativity}} is a graduate textbook and reference on Albert Einstein's general theory of relativity written by the gravitational physicist Robert Wald. This work is used to retype the original work in \textsf{\LaTeX}, please do not use it for any commercial purposes.
 
 In this remake, the pictures of the original work have been redrawn. Due to my limited ability, it is inevitable that some sentences, formulas, and typesetting will occur Error, welcome to give me feedback via email \href{mailto:xiamyphys@gmail.com}{xiamyphys@gmail.com}.
 
 The painting reproduced on the cover of the paperback version of this book is René Magritte's \emph{Les Belles Réalités}, \copyright by ADAGP, Paris, 1984. Picture source \href{https://pinterest.com}{Pinterest}.
 
-\vskip1ex\hrule\vspace{-1ex}
+\vskip1ex\hrule\vskip1ex
 
-\subsection*{香港繁體}
 《廣義相對論》系引力物理學家羅伯特·沃爾德撰寫嘅一本關於阿爾伯特·愛因斯坦廣義相對論嘅研究生教科書同參考書. 本工用於對原著以\textsf{\LaTeX} 重新排版，請勿用於任何商業用途.
 
 本次重制對原作嘅插圖進行咗重新繪製. 由於真人能力有限，少不免會出現啲語句 / 公式 / 排版錯誤，歡迎通過郵件 \href{mailto:xiamyphys@gmail.com}{xiamyphys@gmail.com} 畀我迴響.
 
 平裝本封面上嘅畫作系雷內·馬格利特嘅 ``\emph{Les Belles Réalités}''，\copyright ADAGP，巴黎，1984. 源 \href{https://pinterest.com}{Pinterest}.
 
-\vskip1ex\hrule\vspace{-1ex}
+\vskip1ex\hrule\vskip1ex
 
-\subsection*{大陆简体}
 《广义相对论》是引力物理学家罗伯特·沃尔德撰写的一本关于阿尔伯特·爱因斯坦广义相对论的研究生教科书和参考书. 本工作用于对原著以\textsf{\LaTeX} 重新排版，请勿用于任何商业用途.
 
 本次重制对原作的插图进行了重新绘制. 由于本人能力有限，难免会出现一些语句 / 公式 / 排版错误，欢迎通过邮件 \href{mailto:xiamyphys@gmail.com}{xiamyphys@gmail.com} 给我反馈.
 
 平装本封面上的画作是雷内·马格利特的 ``\emph{Les Belles Réalités}''， \copyright ADAGP，巴黎，1984. 源 \href{https://pinterest.com}{Pinterest}.
+
+\clearpage
+\thispagestyle{empty}
+\vspace*{\fill}
+\begin{center}
+\Large\textsf{This page intentionally left blank.}
+\end{center}
+\vspace*{\fill}
